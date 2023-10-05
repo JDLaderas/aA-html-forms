@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Building HTML Forms</title>
+	</head>
+	<body>
+		<h1>Building HTML Forms</h1>
+
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Add user</legend>
+
+				<div>
+					<label for="firstName">First name</label>
+					<input
+						type="text"
+						name="first_name"
+						id="firstName"
+						placeholder="first name"
+					/>
+				</div>
+
+				<div>
+					<label for="lastName">Last name</label>
+					<input
+						type="text"
+						name="last_name"
+						id="lastName"
+						placeholder="last name"
+					/>
+				</div>
+
+				<div>
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email-address"
+						id="email"
+						placeholder="email"
+					/>
+				</div>
+
+				<div>
+					<label for="status">Status</label>
+					<select name="user-status" id="status">
+						<option value="student">Student</option>
+						<option value="teacher">Teacher</option>
+						<option value="guest">Guest</option>
+					</select>
+				</div>
+
+				<div>
+					<p>Choose your favorite programming language</p>
+					<label for="html">HTML</label>
+					<input type="radio" value="html" id="html" name="fav-language" />
+
+					<label for="css">CSS</label>
+					<input type="radio" value="css" id="css" name="fav-language" />
+
+					<label for="javascript">Javascript</label>
+					<input
+						type="radio"
+						value="javascript"
+						id="javascript"
+						name="fav-language"
+					/>
+				</div>
+
+				<div>
+					<label for="bio">Comments</label>
+					<textarea name="bio" id="bio" placeholder="Comments here"></textarea>
+				</div>
+
+				<div>
+					<label for="calendar">Calendar</label>
+					<input type="date" name="calendar" id="calendar" />
+				</div>
+
+				<div>
+					<label for="sign-up">Sign up for newsletter</label>
+					<input type="checkbox" name="sign-up" id="sign-up" />
+
+					<label for="agreements">Agree to terms and conditions</label>
+					<input type="checkbox" name="agreements" id="agreements" />
+				</div>
+
+				<div>
+					<button type="submit">Add this person</button>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
